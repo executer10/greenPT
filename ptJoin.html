@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <h1>기본 정보 입력</h1>
+        <form action="">
+            <table border="1">
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" name="id"></td>
+                </tr>
+                <tr>
+                    <td>패스워드</td>
+                    <td><input type="password" name="pw"> 문자, 숫자, 특수문자 조합으로 8자 이상 입력해주세요.</td>
+                </tr>
+                <tr>
+                    <td>패스워드 확인</td>
+                    <td><input type="password" name="pw"></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" name="name"> 실명만 입력해 주세요.</td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>연락처</td>
+                    <td><input type="tel" name="tel" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" title="####-####-####"></td>
+                </tr>
+                <tr>
+                    <td>사진</td>
+                    <td><input type="file" accept="image/png,image/jpeg">png,jpeg만 업로드 가능합니다.</td>
+                </tr>
+                <tr>
+                    <td>이메일 수신동의</td>
+                    <td><input type="checkbox" name="emailAgree"></td>
+                </tr>
+                <tr>
+                    <td>SMS수신 동의</td>
+                    <td><input type="email" name="smsAgree"></td>
+                </tr>
+            </table>
+            <input type="submit" value="완료">
+            <input type="reset" value="취소">
+        </form>
+        
+    </section>
+</body>
+</html>
