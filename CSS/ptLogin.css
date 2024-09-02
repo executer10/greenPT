@@ -1,6 +1,9 @@
+@charset "utf-8";
 section{
+    margin: auto;
     border: 1px solid black;
     padding: 10%;
+    width: 800px;
 }
 .tableGrid{
     display: grid;
