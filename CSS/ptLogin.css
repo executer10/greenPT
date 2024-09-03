@@ -1,26 +1,35 @@
 @charset "utf-8";
 section{
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(11, 198, 11);
     padding: 10%;
     width: 800px;
 }
+
 .tableGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-top: 2px solid black;
+}
+.tableGrid>table, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(11, 198, 11);
+}
+.inputArray{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+}
+.inputArray>input{
+    width: 200px;
+}
+.inputArray>label{
+    margin: auto;
     
 }
-.greenLoginBox .input {
-    display: flex;
-    justify-content: space-between; 
-    height: 35px;
-}
-
-.greenLoginBox .login{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-.greenLoginBox .checkBox{
-    margin-left: 50px;
+.loginButton{
+    font-size: 20px;
+    background-color: rgb(11, 223, 11);
+    width: 100px;
+    height: 80px;
 }
