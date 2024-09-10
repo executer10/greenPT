@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+section{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+tr td{
+    border: 1px solid black;
+    
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.sectionHeader b{
+    font-size: 20px;
+}
+
+table{
+    margin: 20px;
+    padding: 20px;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    width: 800px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.sectionFooter{
+    margin: auto;
+    width: 500px;
+}
