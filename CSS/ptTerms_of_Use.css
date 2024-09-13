@@ -3,12 +3,14 @@
 section{
     width: 1000px;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid rgb(11, 198, 11);
+}
+article > table{
+    margin: auto;
 }
 
 tr td{
-    border: 1px solid black;
-    
+    border: 1px solid rgb(11, 198, 11);
 }
 
 .sectionHeader{
@@ -21,11 +23,6 @@ tr td{
     font-size: 20px;
 }
 
-table{
-    margin: 20px;
-    padding: 20px;
-}
-
 .scroll-box {
     overflow-y: scroll;
     width: 800px;
@@ -36,4 +33,10 @@ table{
 .sectionFooter{
     margin: auto;
     width: 500px;
+}
+
+.joinLocationDiv, .joinLocation{
+    width: 800px;
+    height: 50px;
+    margin: auto;
 }
