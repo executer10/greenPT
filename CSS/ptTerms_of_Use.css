@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+section{
+    width: 1000px;
+    margin: auto;
+    border: 1px solid rgb(11, 198, 11);
+}
+article > table{
+    margin: auto;
+}
+
+tr td{
+    border: 1px solid rgb(11, 198, 11);
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content:space-between;
+    padding: 20px;
+}
+
+.sectionHeader b{
+    font-size: 20px;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    width: 800px;
+    height: 300px;
+    border: 1px solid #ccc;
+}
+
+.sectionFooter{
+    margin: auto;
+    width: 500px;
+}
+
+.joinLocationDiv, .joinLocation{
+    width: 800px;
+    height: 50px;
+    margin: auto;
+}
