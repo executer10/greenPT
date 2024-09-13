@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const termsOfUseAll = document.querySelector("#termsOfUseAll");
 
     // 'termsOfUse'로 시작하는 모든 체크박스 선택 후 변수에 저장
-    const termsOfUseCheckboxes = document.querySelectorAll('input[name^="termsOfUse"]');
+    const termsOfUseCheckboxes = document.querySelectorAll(".termsOfUse");
 
     //
     const joinButton = document.querySelector(".joinLocation");
@@ -20,22 +20,15 @@ document.addEventListener('DOMContentLoaded', function(){
             checkbox.checked = termsOfUseAll.checked;
         });
     });
-    
 
+    function updateTermsOfUseAll(){
+        const allChecked = Array.from(termsOfUseCheckboxes).every(cb => cb.checked);
+        termsOfUseAll.checked = allChecked;
+    }
+    
     // 각 개별 약관 체크박스 클릭 이벤트 처리
     termsOfUseCheckboxes.forEach(checkbox =>{
-        checkbox.addEventListener('click', function(){
-
-            // 모든 개별 약관이 체크되었는지 확인
-            // Array.from(): NodeList를 배열로 변환
-            // every(): 모든 요소가 조건을 만족하는지 검사
-            // cb => cb.checked: 각 체크박스가 체크되었는지 확인
-            // 모든 체크박스가 체크되면 true, 아니면 false 반환
-            const allChecked = Array.from(termsOfUseCheckboxes).every(cb => cb.checked);
-
-            // '모든 약관에 동의합니다' 체크박스 상태 업데이트
-            termsOfUseAll.checked = allChecked;
-        });
+        checkbox.addEventListener('click', updateTermsOfUseAll);
     });
 
     // 회원가입 버튼 클릭 이벤트 처리
